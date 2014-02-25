@@ -7,4 +7,11 @@ html
   body
     script(src='/javascripts/jquery-1.11.0.js')
     script(src='/bootstrap/js/bootstrap.js')
-    block content
+    div.container
+      block header
+    div.container
+      div.row
+        div.col-md-3
+          block sidebar
+        div.col-md-9
+          block content

@@ -1,5 +1,18 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div#content
+    p
+      strong Welcome to #{title}
+
+block sidebar
+  div#sidebar
+    ul.nav
+      li
+        a link1
+      li
+        a link2
+
+block header
+  div#header.page-header
+    h1= title
